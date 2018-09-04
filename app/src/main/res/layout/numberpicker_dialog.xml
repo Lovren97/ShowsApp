@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10sp"
+    android:paddingTop="10sp"
+    android:paddingRight="10sp"
+    android:paddingLeft="10sp">
+
+    <NumberPicker
+        android:id="@+id/seasonPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp" />
+
+    <NumberPicker
+        android:id="@+id/episodePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seasonPicker"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/seasonPicker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/episodePicker"
+        android:layout_alignParentStart="true"
+        android:text="  Season"
+        android:textSize="14sp"
+        android:textColor="@color/AppColor" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/episodePicker"
+        android:text="  Episode"
+        android:textSize="14sp"
+        android:textColor="@color/AppColor" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/seasonPicker"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/AppColor"
+        android:text="Save"
+        android:textSize="18sp"
+        android:textColor="@color/White" />
+</RelativeLayout>

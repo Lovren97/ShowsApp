@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp"
+    android:background="@drawable/custom_ripple">
+
+    <TextView
+        android:id="@+id/seasonAndEpisode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:text="Season and episode"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/episodeSeasonAndEpisode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seasonAndEpisode"
+        android:layout_marginStart="52dp"
+        android:layout_toEndOf="@+id/seasonAndEpisode"
+        android:text="Episode title"
+        android:textSize="16sp"
+        android:maxWidth="140sp"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignBottom="@+id/seasonAndEpisode"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+</RelativeLayout>

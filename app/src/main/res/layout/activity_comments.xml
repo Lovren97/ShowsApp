@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="co.infinum.showsapp.CommentsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/commentsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Comments"
+        app:titleMarginStart="15sp"/>
+
+    <EditText
+        android:id="@+id/addComment"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Add a comment..."
+        android:inputType="textPersonName"
+        android:paddingBottom="7sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="60sp"
+        android:textSize="16sp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commentsToolbar"
+        android:layout_above="@+id/addComment"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/commentsRecyler"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/commentImage"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_comments_empty" />
+
+            <TextView
+                android:id="@+id/bzvText"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentImage"
+                android:layout_centerHorizontal="true"
+                android:text="Sorry, we don't have comments yet."
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/bzvText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bzvText"
+                android:layout_centerHorizontal="true"
+                android:text="Be the first to add a review."
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/postBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="65sp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addComment"
+        android:layout_alignTop="@+id/addComment"
+        android:layout_marginBottom="5sp"
+        android:text="Post"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+

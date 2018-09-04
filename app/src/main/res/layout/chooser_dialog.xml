@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300sp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/CameraBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:text="Camera"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/GalleryBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@+id/CameraBtn"
+        android:text="Gallery"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>

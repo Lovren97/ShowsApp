@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/AppColor</item>
+        <item name="colorPrimaryDark">@color/AppColor</item>
+        <item name="colorAccent">@color/AppColor</item>
+    </style>
+
+    <style name="ShowsAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/AppColor</item>
+        <item name="colorPrimaryDark">@color/AppColor</item>
+        <item name="colorAccent">@color/AppColor</item>
+    </style>
+
+    <style name="LoginTheme" parent="ShowsAppTheme">
+        <item name="colorPrimary">@color/AppColor</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/AppColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="TitleSize" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

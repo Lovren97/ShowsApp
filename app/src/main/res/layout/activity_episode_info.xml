@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="co.infinum.showsapp.EpisodeInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/imageEpisode"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:foreground="@drawable/gradient2"/>
+
+    <View
+        android:id="@+id/image_cover_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0sp"
+        android:background="@drawable/gradient"
+        />
+
+    <ImageView
+        android:id="@+id/backArrow3"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="11sp"
+        app:srcCompat="@drawable/ic_arrow_back_black" />
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/backArrow3"
+        android:layout_below="@+id/imageEpisode"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Title"
+        android:textColor="#2e2e2e"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/MainTitle"
+        android:layout_below="@+id/episodeSeasonAndEpisode"
+        android:layout_marginTop="10sp"
+        android:text="Description"
+        android:textSize="16sp"
+        android:maxLines="5"
+        android:textColor="#505050"/>
+
+    <TextView
+        android:id="@+id/episodeSeasonAndEpisode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/description"
+        android:layout_below="@+id/MainTitle"
+        android:layout_marginBottom="0sp"
+        android:layout_marginTop="20sp"
+        android:text="S E"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/description"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="31dp"
+        app:srcCompat="@drawable/ic_chat_bubble_outline_black_24dp" />
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="Comments"
+        android:background="@drawable/custom_ripple"/>
+
+    <ProgressBar
+        android:id="@+id/imageLoading"
+        style="@android:style/Widget.Holo.ProgressBar.Large"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/toolbar4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"/>
+</RelativeLayout>

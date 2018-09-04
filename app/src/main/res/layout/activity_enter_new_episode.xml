@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:context="co.infinum.showsapp.EnterNewEpisode">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Add episode"
+        app:titleMarginStart="60sp"
+        app:titleTextColor="@android:color/background_dark" />
+
+    <ImageView
+        android:id="@+id/backArrow2"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="14sp"
+        app:srcCompat="@drawable/ic_arrow_back_black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar3"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageDisplay"
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="57dp"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_empty_placeholder" />
+
+            <ImageView
+                android:id="@+id/photoAdd"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignTop="@+id/imageDisplay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+            <TextView
+                android:id="@+id/addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photoAdd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_ripple"
+                android:text="Upload photo"
+                android:textColor="@color/AppColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/episodeName"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageDisplay"
+                android:layout_marginTop="68dp"
+                android:ems="10"
+                android:hint="Episode title"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seasonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/episodeName"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_ripple"
+                android:text="Season &amp; Episode"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seasonDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/seasonAdd"
+                android:layout_below="@+id/seasonAdd"
+                android:text="Unknown"
+                android:textColor="@color/AppColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/episodeDesc"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/seasonDisplay"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Episode description"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="40sp"
+                android:layout_height="30sp"
+                android:layout_alignStart="@+id/photoAdd"
+                android:layout_below="@+id/episodeDesc"
+                android:layout_marginTop="34dp"
+                android:text="TextView"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/AppColor"
+        android:text="SAVE"
+        android:textColor="@color/White"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+

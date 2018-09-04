@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NetworkApp.iml" filepath="$PROJECT_DIR$/NetworkApp.iml" />
+      <module fileurl="file://D:\Infinum\AppsFromGit\isa-android-showsapp-Lovren97\ShowsApp.iml" filepath="D:\Infinum\AppsFromGit\isa-android-showsapp-Lovren97\ShowsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Infinum\LoginApp\isa-android-showsapp-Lovren97\app\app.iml" filepath="D:\Infinum\LoginApp\isa-android-showsapp-Lovren97\app\app.iml" />
+      <module fileurl="file://D:\Infinum\AppsFromGit\isa-android-showsapp-Lovren97\app\app.iml" filepath="D:\Infinum\AppsFromGit\isa-android-showsapp-Lovren97\app\app.iml" />
+      <module fileurl="file://D:\Infinum\LoginApp\isa-android-showsapp-Lovren97\isa-android-showsapp-Lovren97.iml" filepath="D:\Infinum\LoginApp\isa-android-showsapp-Lovren97\isa-android-showsapp-Lovren97.iml" />
+    </modules>
+  </component>
+</project>
